@@ -1,0 +1,40 @@
+.saldo-bg {
+  background-color: var(--laranja);
+  max-width: 350px;
+  margin: 0 auto 1.2rem auto;
+  border-radius: .8rem;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.saldo {
+  display: grid;
+  gap: .6rem;
+}
+
+.botao {
+  background-color: var(--marrom);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.botao::before {
+  content: '';
+  display: block;
+  background-color: transparent;
+  border: 2px solid white;
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  position: absolute;
+  right: 40px;
+  transition: .2s;
+}
+
+/* ACTIVE */
+
+.botao.active::before {
+  right: 19px;
+}
