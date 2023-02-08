@@ -45,7 +45,7 @@ class Dados {
     this.saldo.addEventListener('change', (e) => {
       localStorage.saldo = e.target.value;
     });
-    this.saldoDisplay.innerText = localStorage.saldo - this.totalDias;
+    this.saldoDisplay.innerText = +localStorage.saldo - this.totalDias;
   }
 
   totalNesseMes() {
